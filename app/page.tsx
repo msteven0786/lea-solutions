@@ -21,9 +21,9 @@ export default function Home() {
       text: "Monthly wheelie bin cleaning service coming soon for local homes and estates.",
     },
     {
-      title: "Property Services",
-      text: "A simple way to request local quotes for cleaning and exterior property maintenance services.",
-    },
+      title: "Roof Cleaning",
+      text: "Professional roof cleaning to remove moss, algae and restore the appearance of your home."
+   }
   ];
 
   const steps = [
@@ -36,7 +36,7 @@ export default function Home() {
     "Blessington",
     "Tallaght",
     "Naas",
-    "Lucan",
+    "Clane",
     "Clondalkin",
     "South Dublin",
   ];
@@ -57,7 +57,7 @@ export default function Home() {
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
               LEA Solutions helps homeowners quickly find trusted local
               contractors for driveway cleaning, patio washing, gutter clearing
-              and exterior property services.
+              and roof cleaning.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
