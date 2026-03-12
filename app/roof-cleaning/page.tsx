@@ -5,14 +5,16 @@ export default function RoofCleaningPage() {
     "Tile roof cleaning",
     "Gutter clearing after roof cleaning",
     "Downpipe flushing",
- const areas = [
-  "Blessington",
-  "Naas",
-  "Tallaght",
-  "Clane",
-  "Clondalkin",
-  "South Dublin",
-];
+  ];
+
+  const areas = [
+    "Blessington",
+    "Naas",
+    "Tallaght",
+    "Clane",
+    "Clondalkin",
+    "South Dublin",
+  ];
 
   const steps = [
     "Request a quote online or by phone.",
@@ -176,19 +178,19 @@ export default function RoofCleaningPage() {
           </p>
         </div>
 
-       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-  {areas.map((area) => (
-    <div
-      key={area}
-      className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
-    >
-      <h3 className="text-lg font-semibold">Roof Cleaning {area}</h3>
-      <p className="mt-2 text-sm text-slate-600">
-        Local roof cleaning quotes available in {area}.
-      </p>
-    </div>
-  ))}
-</div>
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {areas.map((area) => (
+            <div
+              key={area}
+              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+            >
+              <h3 className="text-lg font-semibold">Roof Cleaning {area}</h3>
+              <p className="mt-2 text-sm text-slate-600">
+                Local roof cleaning quotes available in {area}.
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="bg-slate-900">
