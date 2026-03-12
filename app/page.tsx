@@ -1,31 +1,34 @@
 export default function Home() {
   const services = [
-    {
-      title: "Driveway Cleaning",
-      text: "Professional pressure washing to remove moss, algae, dirt and staining from driveways and outdoor surfaces.",
-    },
-    {
-      title: "Patio Cleaning",
-      text: "Refresh patios and paved areas with a deep clean that improves appearance and removes built-up grime.",
-    },
-    {
-      title: "Gutter Clearing",
-      text: "Fast and reliable gutter clearing to help prevent blockages, overflow and water damage.",
-    },
-    {
-      title: "Exterior House Cleaning",
-      text: "Exterior surface cleaning arranged through trusted local contractors for homes and properties.",
-    },
-    {
-      title: "Wheelie Bin Cleaning",
-      text: "Monthly wheelie bin cleaning service coming soon for local homes and estates.",
-    },
-    {
-      title: "Roof Cleaning",
-      text: "Professional roof cleaning to remove moss, algae and restore the appearance of your home.",
-      href: "/roof-cleaning",
-    },
-  ];
+  {
+    title: "Driveway Cleaning",
+    text: "Professional pressure washing to remove moss, algae, dirt and staining from driveways and outdoor surfaces.",
+    href: "/driveway-cleaning",
+  },
+  {
+    title: "Patio Cleaning",
+    text: "Refresh patios and paved areas with a deep clean that improves appearance and removes built-up grime.",
+    href: "/patio-cleaning",
+  },
+  {
+    title: "Gutter Clearing",
+    text: "Fast and reliable gutter clearing to help prevent blockages, overflow and water damage.",
+    href: "/gutter-cleaning",
+  },
+  {
+    title: "Exterior House Cleaning",
+    text: "Exterior surface cleaning arranged through trusted local contractors for homes and properties.",
+  },
+  {
+    title: "Wheelie Bin Cleaning",
+    text: "Monthly wheelie bin cleaning service coming soon for local homes and estates.",
+  },
+  {
+    title: "Roof Cleaning",
+    text: "Professional roof cleaning to remove moss, algae and restore the appearance of your home.",
+    href: "/roof-cleaning",
+  },
+];
 
   const steps = [
     "Request a quote online or by phone.",
