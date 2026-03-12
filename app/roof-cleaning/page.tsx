@@ -47,7 +47,7 @@ export default function RoofCleaningPage() {
                 href="#quote"
                 className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-slate-800"
               >
-                Get Free Quote
+                Get a Free Quote
               </a>
 
               <a
@@ -83,37 +83,76 @@ export default function RoofCleaningPage() {
               roof cleaning job.
             </p>
 
-            <form className="mt-6 grid gap-4">
+            <form
+              name="quote-request"
+              method="POST"
+              action="/thank-you.html"
+              data-netlify="true"
+              netlify
+              data-netlify-honeypot="bot-field"
+              className="mt-6 grid gap-4"
+            >
+              <input type="hidden" name="form-name" value="quote-request" />
+
+              <p className="hidden">
+                <label>
+                  Don’t fill this out if you're human: <input name="bot-field" />
+                </label>
+              </p>
+
               <input
                 type="text"
+                name="fullName"
                 placeholder="Full Name"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
               />
+
               <input
                 type="text"
+                name="phoneNumber"
                 placeholder="Phone Number"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
               />
+
               <input
                 type="email"
+                name="emailAddress"
                 placeholder="Email Address"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
               />
+
               <input
                 type="text"
+                name="areaAddress"
                 placeholder="Area / Address"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
               />
+
+              <select
+                name="service"
+                defaultValue="Roof Cleaning"
+                className="rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
+              >
+                <option>Roof Cleaning</option>
+                <option>Driveway Cleaning</option>
+                <option>Patio Cleaning</option>
+                <option>Gutter Clearing</option>
+                <option>Exterior House Cleaning</option>
+                <option>Wheelie Bin Cleaning</option>
+              </select>
+
               <textarea
                 rows={4}
+                name="jobDetails"
                 placeholder="Tell us about your roof, moss build-up, property type or access"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
               />
+
               <button
-                type="button"
+                type="submit"
                 className="rounded-xl bg-slate-900 px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-800"
               >
-                Request My Quote
+                Get My Roof Cleaning Quote
               </button>
             </form>
           </div>
