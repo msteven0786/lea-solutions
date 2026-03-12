@@ -99,27 +99,24 @@ export default function Home() {
               Send your details and we’ll help arrange a fast quote for your
               job.
             </p>
-<form
-  name="quote-request"
-  method="POST"
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
-  className="mt-6 grid gap-4"
->
-  <input type="hidden" name="form-name" value="quote-request" />
 
-  <p className="hidden">
-    <label>
-      Don’t fill this out if you're human: <input name="bot-field" />
-    </label>
-  </p>
+            <form
+              name="quote-request"
+              method="POST"
+              action="/thank-you"
+              data-netlify="true"
+              netlify
+              data-netlify-honeypot="bot-field"
+              className="mt-6 grid gap-4"
+            >
+              <input type="hidden" name="form-name" value="quote-request" />
 
-  <input
-    type="text"
-    name="fullName"
-    placeholder="Full Name"
-    className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500"
-  />
+              <p className="hidden">
+                <label>
+                  Don’t fill this out if you're human: <input name="bot-field" />
+                </label>
+              </p>
+
               <input
                 type="text"
                 name="fullName"
@@ -150,8 +147,8 @@ export default function Home() {
 
               <select
                 name="service"
-                className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500"
                 defaultValue=""
+                className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500"
               >
                 <option value="" disabled>
                   Select Service
@@ -298,6 +295,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <form
+        name="quote-request"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        hidden
+      >
+        <input type="text" name="fullName" />
+        <input type="text" name="phoneNumber" />
+        <input type="email" name="emailAddress" />
+        <input type="text" name="areaAddress" />
+        <input type="text" name="service" />
+        <textarea name="jobDetails"></textarea>
+      </form>
     </main>
   );
 }
