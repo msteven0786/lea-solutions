@@ -22,8 +22,9 @@ export default function Home() {
     },
     {
       title: "Roof Cleaning",
-      text: "Professional roof cleaning to remove moss, algae and restore the appearance of your home."
-   }
+      text: "Professional roof cleaning to remove moss, algae and restore the appearance of your home.",
+      href: "/roof-cleaning-blessington",
+    },
   ];
 
   const steps = [
@@ -44,7 +45,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
       <section className="border-b border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-6xl px-6 py-20 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+        <div className="mx-auto max-w-6xl px-6 py-20 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
           <div>
             <p className="inline-block rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
               Local Cleaning & Property Services
@@ -127,6 +128,7 @@ export default function Home() {
                 <option>Gutter Clearing</option>
                 <option>Exterior House Cleaning</option>
                 <option>Wheelie Bin Cleaning</option>
+                <option>Roof Cleaning</option>
               </select>
               <textarea
                 rows={4}
@@ -156,16 +158,26 @@ export default function Home() {
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {services.map((service) => (
-           <a
-           href="/roof-cleaning-blessington"
-           className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg"
-          >lassName="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
-            
-              <h3 className="text-xl font-semibold">{service.title}</h3>
-              <p className="mt-3 leading-7 text-slate-600">{service.text}</p>
-            </div>
-          ))}
+          {services.map((service) =>
+            service.href ? (
+              <a
+                key={service.title}
+                href={service.href}
+                className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+              >
+                <h3 className="text-xl font-semibold">{service.title}</h3>
+                <p className="mt-3 leading-7 text-slate-600">{service.text}</p>
+              </a>
+            ) : (
+              <div
+                key={service.title}
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+              >
+                <h3 className="text-xl font-semibold">{service.title}</h3>
+                <p className="mt-3 leading-7 text-slate-600">{service.text}</p>
+              </div>
+            )
+          )}
         </div>
       </section>
 
