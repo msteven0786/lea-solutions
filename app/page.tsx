@@ -105,7 +105,6 @@ export default function Home() {
               method="POST"
               action="/thank-you.html"
               data-netlify="true"
-              netlify
               data-netlify-honeypot="bot-field"
               className="mt-6 grid gap-4"
             >
