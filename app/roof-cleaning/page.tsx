@@ -72,9 +72,9 @@ export default function RoofCleaningPage() {
           </div>
 
          <div
-  id="quote"
-  className="relative z-10 mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm lg:mt-0"
->
+            id="quote"
+             className="relative z-10 mt-12 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm lg:mt-0"
+           >
             <h2 className="text-2xl font-bold tracking-tight">
               Request a Roof Cleaning Quote
             </h2>
