@@ -23,7 +23,7 @@ export default function Home() {
     {
       title: "Roof Cleaning",
       text: "Professional roof cleaning to remove moss, algae and restore the appearance of your home.",
-      href: "/roof-cleaning-blessington",
+      href: "/roof-cleaning",
     },
   ];
 
