@@ -103,7 +103,7 @@ export default function Home() {
             <form
               name="quote-request"
               method="POST"
-              action="/thank-you"
+              action="/thank-you.html"
               data-netlify="true"
               netlify
               data-netlify-honeypot="bot-field"
