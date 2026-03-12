@@ -157,10 +157,11 @@ export default function Home() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
-            >
+           <a
+           href="/roof-cleaning-blessington"
+           className="block rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg"
+          >lassName="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+            
               <h3 className="text-xl font-semibold">{service.title}</h3>
               <p className="mt-3 leading-7 text-slate-600">{service.text}</p>
             </div>
