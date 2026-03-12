@@ -100,29 +100,50 @@ export default function Home() {
               job.
             </p>
 
-            <form className="mt-6 grid gap-4">
+            <form
+              name="quote-request"
+              method="POST"
+              data-netlify="true"
+              className="mt-6 grid gap-4"
+            >
+              <input type="hidden" name="form-name" value="quote-request" />
+
               <input
                 type="text"
+                name="fullName"
                 placeholder="Full Name"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500"
               />
+
               <input
                 type="text"
+                name="phoneNumber"
                 placeholder="Phone Number"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500"
               />
+
               <input
                 type="email"
+                name="emailAddress"
                 placeholder="Email Address"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500"
               />
+
               <input
                 type="text"
+                name="areaAddress"
                 placeholder="Area / Address"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500"
               />
-              <select className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500">
-                <option>Select Service</option>
+
+              <select
+                name="service"
+                className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500"
+                defaultValue=""
+              >
+                <option value="" disabled>
+                  Select Service
+                </option>
                 <option>Driveway Cleaning</option>
                 <option>Patio Cleaning</option>
                 <option>Gutter Clearing</option>
@@ -130,16 +151,19 @@ export default function Home() {
                 <option>Wheelie Bin Cleaning</option>
                 <option>Roof Cleaning</option>
               </select>
+
               <textarea
                 rows={4}
+                name="jobDetails"
                 placeholder="Tell us about the job"
                 className="rounded-xl border border-slate-300 px-4 py-3 outline-none ring-0 transition focus:border-slate-500"
               />
+
               <button
-                type="button"
+                type="submit"
                 className="rounded-xl bg-slate-900 px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-800"
               >
-                Request My Quote
+                Get My Free Quote
               </button>
             </form>
           </div>
