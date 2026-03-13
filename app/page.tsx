@@ -1,34 +1,34 @@
 export default function Home() {
   const services = [
-  {
-    title: "Driveway Cleaning",
-    text: "Professional pressure washing to remove moss, algae, dirt and staining from driveways and outdoor surfaces.",
-    href: "/driveway-cleaning",
-  },
-  {
-    title: "Patio Cleaning",
-    text: "Refresh patios and paved areas with a deep clean that improves appearance and removes built-up grime.",
-    href: "/patio-cleaning",
-  },
-  {
-    title: "Gutter Clearing",
-    text: "Fast and reliable gutter clearing to help prevent blockages, overflow and water damage.",
-    href: "/gutter-cleaning",
-  },
-  {
-    title: "Exterior House Cleaning",
-    text: "Exterior surface cleaning arranged through trusted local contractors for homes and properties.",
-  },
-  {
-    title: "Wheelie Bin Cleaning",
-    text: "Monthly wheelie bin cleaning service coming soon for local homes and estates.",
-  },
-  {
-    title: "Roof Cleaning",
-    text: "Professional roof cleaning to remove moss, algae and restore the appearance of your home.",
-    href: "/roof-cleaning",
-  },
-];
+    {
+      title: "Driveway Cleaning",
+      text: "Professional pressure washing to remove moss, algae, dirt and staining from driveways and outdoor surfaces.",
+      href: "/driveway-cleaning",
+    },
+    {
+      title: "Patio Cleaning",
+      text: "Refresh patios and paved areas with a deep clean that improves appearance and removes built-up grime.",
+      href: "/patio-cleaning",
+    },
+    {
+      title: "Gutter Clearing",
+      text: "Fast and reliable gutter clearing to help prevent blockages, overflow and water damage.",
+      href: "/gutter-cleaning",
+    },
+    {
+      title: "Exterior House Cleaning",
+      text: "Exterior surface cleaning arranged through trusted local contractors for homes and properties.",
+    },
+    {
+      title: "Wheelie Bin Cleaning",
+      text: "Monthly wheelie bin cleaning service coming soon for local homes and estates.",
+    },
+    {
+      title: "Roof Cleaning",
+      text: "Professional roof cleaning to remove moss, algae and restore the appearance of your home.",
+      href: "/roof-cleaning",
+    },
+  ];
 
   const steps = [
     "Request a quote online or by phone.",
@@ -37,12 +37,14 @@ export default function Home() {
   ];
 
   const areas = [
-    "Blessington",
-    "Tallaght",
-    "Naas",
-    "Clane",
-    "Clondalkin",
-    "South Dublin",
+    { name: "Roof Cleaning Blessington", href: "/roof-cleaning-blessington" },
+    { name: "Roof Cleaning Tallaght", href: "/roof-cleaning-tallaght" },
+    { name: "Roof Cleaning Templeogue", href: "/roof-cleaning-templeogue" },
+    { name: "Roof Cleaning Terenure", href: "/roof-cleaning-terenure" },
+    { name: "Roof Cleaning Naas", href: "/roof-cleaning-naas" },
+    { name: "Roof Cleaning Newbridge", href: "/roof-cleaning-newbridge" },
+    { name: "Roof Cleaning Clane", href: "/roof-cleaning-clane" },
+    { name: "Roof Cleaning Clondalkin", href: "/roof-cleaning-clondalkin" },
   ];
 
   return (
@@ -247,12 +249,13 @@ export default function Home() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               {areas.map((area) => (
-                <span
-                  key={area}
-                  className="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium"
+                <a
+                  key={area.href}
+                  href={area.href}
+                  className="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium transition hover:bg-slate-100"
                 >
-                  {area}
-                </span>
+                  {area.name}
+                </a>
               ))}
             </div>
           </div>

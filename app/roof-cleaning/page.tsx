@@ -13,14 +13,15 @@ export default function RoofCleaningPage() {
     "Gutter clearing after roof cleaning",
     "Downpipe flushing",
   ];
-
-  const areas = [
-    "Blessington",
-    "Naas",
-    "Tallaght",
-    "Clane",
-    "Clondalkin",
-    "South Dublin",
+const areas = [
+  { name: "Blessington", slug: "roof-cleaning-blessington" },
+  { name: "Naas", slug: "roof-cleaning-naas" },
+  { name: "Tallaght", slug: "roof-cleaning-tallaght" },
+  { name: "Clane", slug: "roof-cleaning-clane" },
+  { name: "Clondalkin", slug: "roof-cleaning-clondalkin" },
+  { name: "Newbridge", slug: "roof-cleaning-newbridge" },
+  { name: "Templeogue", slug: "roof-cleaning-templeogue" },
+  { name: "Terenure", slug: "roof-cleaning-terenure" },
   ];
 
   const steps = [
@@ -225,15 +226,19 @@ export default function RoofCleaningPage() {
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {areas.map((area) => (
-            <div
-              key={area}
-              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
-            >
-              <h3 className="text-lg font-semibold">Roof Cleaning {area}</h3>
-              <p className="mt-2 text-sm text-slate-600">
-                Local roof cleaning quotes available in {area}.
-              </p>
-            </div>
+  <a
+    key={area.slug}
+    href={`/${area.slug}`}
+    className="block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md"
+  >
+              <h3 className="text-lg font-semibold">
+  Roof Cleaning {area.name}
+</h3>
+
+<p className="mt-2 text-sm text-slate-600">
+  Local roof cleaning quotes available in {area.name}.
+</p>
+            </a>
           ))}
         </div>
       </section>

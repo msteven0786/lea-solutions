@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Roof Cleaning Blessington | Moss Removal & Roof Wash",
+  title: "Roof Cleaning Clondalkin | Moss Removal & Roof Wash",
   description:
-    "Professional roof cleaning services in Blessington. Remove moss and algae from tiled roofs with trusted local contractors.",
+    "Professional roof cleaning services in Clondalkin. Remove moss and algae from tiled roofs with trusted local contractors.",
 };
-export default function RoofCleaningBlessington() {
+export default function RoofCleaningClondalkin() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16">
       
       <h1 className="text-4xl font-bold mb-6">
-        Roof Cleaning in Blessington
+        Roof Cleaning in Clondalkin
       </h1>
 
       <p className="text-lg mb-6">
-        Looking for professional roof cleaning in Blessington? We help homeowners
+        Looking for professional roof cleaning in Clondalkin? We help homeowners
         connect with trusted local contractors who specialise in roof moss removal,
         soft washing and exterior cleaning services.
       </p>
