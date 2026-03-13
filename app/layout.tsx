@@ -39,12 +39,6 @@ export default function RootLayout({
     ],
     telephone: "+353868886086",
     url: "https://lea-solutions.netlify.app",
-    serviceType: [
-      "Roof Cleaning",
-      "Driveway Cleaning",
-      "Patio Cleaning",
-      "Gutter Cleaning",
-    ],
   };
 
   return (
