@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Home() {
   const services = [
     {
@@ -52,6 +53,15 @@ export default function Home() {
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
           <div>
+            <div className="mb-6">
+  <Image
+    src="/logo.png"
+    alt="LEA Solutions logo"
+    width={180}
+    height={60}
+    priority
+  />
+</div>
             <p className="inline-block rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
               Local Cleaning & Property Services
             </p>
