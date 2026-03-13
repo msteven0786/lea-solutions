@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Roof Cleaning Dublin & Kildare | Moss Removal & Soft Wash",
+  description:
+    "Professional roof cleaning services in Dublin and Kildare including moss removal and soft wash roof cleaning. Get a fast local quote today.",
+};
 export default function RoofCleaningPage() {
   const includedServices = [
     "Roof moss removal",

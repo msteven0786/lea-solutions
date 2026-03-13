@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Roof Cleaning Blessington | Moss Removal & Roof Wash",
+  description:
+    "Professional roof cleaning services in Blessington. Remove moss and algae from tiled roofs with trusted local contractors.",
+};
 export default function RoofCleaningNaas() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16">

@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Patio Cleaning Dublin & Kildare | Patio Pressure Washing",
+  description:
+    "Professional patio cleaning services in Dublin and Kildare. Restore slabs and paving by removing moss, algae and grime.",
+};
 export default function PatioCleaningPage() {
   const includedServices = [
     "Patio pressure washing",

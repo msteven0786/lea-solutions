@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Driveway Cleaning Dublin & Kildare | Pressure Washing",
+  description:
+    "Professional driveway cleaning services in Dublin and Kildare. Remove moss, algae and stains from driveways and paving with expert pressure washing.",
+};
 export default function DrivewayCleaningPage() {
   const includedServices = [
     "Driveway pressure washing",
