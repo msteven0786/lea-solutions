@@ -1,4 +1,11 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "LEA Solutions | Exterior Cleaning & Property Services",
+  description:
+    "LEA Solutions connects homeowners with trusted local contractors for roof cleaning, driveway cleaning, patio cleaning and gutter clearing across Dublin and Kildare.",
+};
+
 export default function Home() {
   const services = [
     {
@@ -51,17 +58,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
       <section className="border-b border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-6xl px-6 py-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
+        <div className="mx-auto max-w-6xl px-6 py-20 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
           <div>
-            <div className="mb-6">
-  <Image
-    src="/logo.png"
-    alt="LEA Solutions logo"
-    width={180}
-    height={60}
-    priority
-  />
-</div>
             <p className="inline-block rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
               Local Cleaning & Property Services
             </p>
@@ -280,6 +278,25 @@ export default function Home() {
               <li>Clear communication from start to finish</li>
               <li>Focused on practical local service delivery</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold tracking-tight">
+              Trusted Local Contractors
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              LEA Solutions helps homeowners connect with trusted local
+              contractors for roof cleaning, driveway cleaning, patio cleaning
+              and gutter clearing across Dublin and Kildare.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              We focus on fast quotes, clear communication and matching
+              customers with reliable local service providers in their area.
+            </p>
           </div>
         </div>
       </section>

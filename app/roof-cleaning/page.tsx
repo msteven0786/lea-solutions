@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description:
     "Professional roof cleaning services in Dublin and Kildare including moss removal and soft wash roof cleaning. Get a fast local quote today.",
 };
+
 export default function RoofCleaningPage() {
   const includedServices = [
     "Roof moss removal",
@@ -13,15 +14,16 @@ export default function RoofCleaningPage() {
     "Gutter clearing after roof cleaning",
     "Downpipe flushing",
   ];
-const areas = [
-  { name: "Blessington", slug: "roof-cleaning-blessington" },
-  { name: "Naas", slug: "roof-cleaning-naas" },
-  { name: "Tallaght", slug: "roof-cleaning-tallaght" },
-  { name: "Clane", slug: "roof-cleaning-clane" },
-  { name: "Clondalkin", slug: "roof-cleaning-clondalkin" },
-  { name: "Newbridge", slug: "roof-cleaning-newbridge" },
-  { name: "Templeogue", slug: "roof-cleaning-templeogue" },
-  { name: "Terenure", slug: "roof-cleaning-terenure" },
+
+  const areas = [
+    { name: "Blessington", slug: "roof-cleaning-blessington" },
+    { name: "Naas", slug: "roof-cleaning-naas" },
+    { name: "Tallaght", slug: "roof-cleaning-tallaght" },
+    { name: "Clane", slug: "roof-cleaning-clane" },
+    { name: "Clondalkin", slug: "roof-cleaning-clondalkin" },
+    { name: "Newbridge", slug: "roof-cleaning-newbridge" },
+    { name: "Templeogue", slug: "roof-cleaning-templeogue" },
+    { name: "Terenure", slug: "roof-cleaning-terenure" },
   ];
 
   const steps = [
@@ -226,20 +228,79 @@ const areas = [
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {areas.map((area) => (
-  <a
-    key={area.slug}
-    href={`/${area.slug}`}
-    className="block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-md"
-  >
+            <a
+              key={area.slug}
+              href={`/${area.slug}`}
+              className="block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md"
+            >
               <h3 className="text-lg font-semibold">
-  Roof Cleaning {area.name}
-</h3>
-
-<p className="mt-2 text-sm text-slate-600">
-  Local roof cleaning quotes available in {area.name}.
-</p>
+                Roof Cleaning {area.name}
+              </h3>
+              <p className="mt-2 text-sm text-slate-600">
+                Local roof cleaning quotes available in {area.name}.
+              </p>
             </a>
           ))}
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <h2 className="text-3xl font-bold tracking-tight">
+            Roof Cleaning FAQs
+          </h2>
+
+          <div className="mt-10 space-y-6">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 className="text-lg font-semibold">
+                How long does roof cleaning take?
+              </h3>
+              <p className="mt-3 text-slate-600">
+                Most roof cleaning jobs take between 2 and 5 hours depending on
+                roof size, moss build-up and access.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 className="text-lg font-semibold">
+                How often should a roof be cleaned?
+              </h3>
+              <p className="mt-3 text-slate-600">
+                Many roofs benefit from cleaning every 3 to 5 years depending on
+                weather conditions, moss growth and surrounding trees.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 className="text-lg font-semibold">
+                Is roof cleaning safe for tiles?
+              </h3>
+              <p className="mt-3 text-slate-600">
+                Professional roof cleaning methods such as soft washing and
+                careful moss removal are designed to clean the roof safely
+                without damaging tiles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold tracking-tight">
+              Trusted Local Roof Cleaning Contractors
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              LEA Solutions helps homeowners connect with trusted local
+              contractors for roof cleaning and moss removal across Dublin and
+              Kildare.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-slate-600">
+              We focus on fast quotes, clear communication and connecting
+              customers with reliable local professionals in their area.
+            </p>
+          </div>
         </div>
       </section>
 
