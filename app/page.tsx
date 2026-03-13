@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
       <section className="border-b border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-6xl px-6 py-20 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
+        <div className="mx-auto max-w-6xl px-6 py-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12">
           <div>
             <div className="mb-6">
   <Image
