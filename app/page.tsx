@@ -20,18 +20,17 @@ export default function Home() {
     },
     {
       title: "Gutter Cleaning",
-      text: "Fast and reliable gutter clearing to prevent blockages and water damage.",
+      text: "Fast and reliable gutter clearing to help prevent blockages and water damage.",
       href: "/gutter-cleaning",
     },
   ];
 
   return (
     <main className="bg-white">
-      {/* HERO */}
-      <section className="border-b border-slate-200 bg-slate-50">
+      <section className="bg-gradient-to-b from-[#EAF2FF] via-white to-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-2 lg:items-center">
           <div>
-            <span className="inline-flex rounded-full bg-slate-200 px-4 py-1 text-sm font-medium text-slate-700">
+            <span className="inline-flex rounded-full bg-[#DCE8FF] px-4 py-1 text-sm font-medium text-[#0B3B8C]">
               Dublin & Kildare
             </span>
 
@@ -39,29 +38,27 @@ export default function Home() {
               Get Fast Quotes for Roof, Gutter, Patio & Driveway Cleaning
             </h1>
 
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              LEA Solutions helps homeowners connect with trusted local contractors
-              for exterior cleaning services across Dublin and Kildare.
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+              LEA Solutions helps homeowners connect with trusted local contractors for exterior cleaning services across Dublin and Kildare.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+                className="rounded-xl bg-[#0B3B8C] px-6 py-3 text-sm font-semibold text-white hover:bg-[#082d6c]"
               >
                 Request a Quote
               </Link>
 
               <a
                 href="tel:0868886086"
-                className="rounded-xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100"
+                className="rounded-xl border border-[#0B3B8C] px-6 py-3 text-sm font-semibold text-[#0B3B8C] hover:bg-[#EAF2FF]"
               >
                 Call 086 888 6086
               </a>
             </div>
           </div>
 
-          {/* QUOTE FORM */}
           <div>
             <QuoteForm
               formName="homepage-quote"
@@ -74,53 +71,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICES */}
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-          Our Services
-        </h2>
+        <div className="text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900">
+            Our Services
+          </h2>
+          <p className="mt-4 text-lg text-slate-600">
+            Exterior cleaning services for homeowners across Dublin and Kildare.
+          </p>
+        </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (
             <Link
               key={service.title}
               href={service.href}
-              className="rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition"
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-[#0B3B8C] hover:shadow-md"
             >
               <h3 className="text-lg font-semibold text-slate-900">
                 {service.title}
               </h3>
-              <p className="mt-2 text-sm text-slate-600">{service.text}</p>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{service.text}</p>
+              <span className="mt-4 inline-block text-sm font-semibold text-[#0B3B8C]">
+                Learn more →
+              </span>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section className="bg-slate-50 py-16">
+      <section className="bg-[#F8FBFF] py-16">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-            How It Works
-          </h2>
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900">
+              How It Works
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              A simple way to request a quote and get your job moving.
+            </p>
+          </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl border border-slate-200 bg-white p-6">
-              <h3 className="font-semibold text-slate-900">1. Submit Details</h3>
-              <p className="mt-2 text-sm text-slate-600">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#DCE8FF] font-bold text-[#0B3B8C]">
+                1
+              </div>
+              <h3 className="font-semibold text-slate-900">Submit Details</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
                 Tell us what service you need and where you are located.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-slate-200 bg-white p-6">
-              <h3 className="font-semibold text-slate-900">2. We Connect You</h3>
-              <p className="mt-2 text-sm text-slate-600">
-                We help connect you with a suitable local contractor.
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#DCE8FF] font-bold text-[#0B3B8C]">
+                2
+              </div>
+              <h3 className="font-semibold text-slate-900">We Connect You</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                We help connect you with a suitable local contractor for the job.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-slate-200 bg-white p-6">
-              <h3 className="font-semibold text-slate-900">3. Get Your Quote</h3>
-              <p className="mt-2 text-sm text-slate-600">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#DCE8FF] font-bold text-[#0B3B8C]">
+                3
+              </div>
+              <h3 className="font-semibold text-slate-900">Get Your Quote</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
                 Receive a quote and arrange the work directly.
               </p>
             </div>
@@ -128,7 +145,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
       <section className="mx-auto max-w-4xl px-6 py-16 text-center">
         <h2 className="text-3xl font-bold tracking-tight text-slate-900">
           Ready to get started?
@@ -141,14 +157,14 @@ export default function Home() {
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Link
             href="/contact"
-            className="rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+            className="rounded-xl bg-[#0B3B8C] px-6 py-3 text-sm font-semibold text-white hover:bg-[#082d6c]"
           >
             Request a Quote
           </Link>
 
           <a
             href="tel:0868886086"
-            className="rounded-xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100"
+            className="rounded-xl border border-[#0B3B8C] px-6 py-3 text-sm font-semibold text-[#0B3B8C] hover:bg-[#EAF2FF]"
           >
             Call 086 888 6086
           </a>
