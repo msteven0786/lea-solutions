@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | LEA Solutions",
   },
   description:
-    "LEA Solutions provides interior painting and property services across Dublin, Wicklow and Kildare. Get a fast quote for interior painting, roof cleaning, driveway cleaning, patio cleaning and gutter cleaning.",
+    "LEA Solutions provides interior painting and property services across Dublin, Wicklow and Kildare.",
 };
 
 export default function RootLayout({
@@ -46,7 +46,7 @@ export default function RootLayout({
               />
             </Link>
 
-            <nav className="hidden items-center gap-6 md:flex">
+            <nav className="hidden items-center gap-8 md:flex">
               <Link
                 href="/interior-painting"
                 className="text-sm font-semibold text-[#0B3B8C] hover:text-[#082d6c]"
@@ -54,28 +54,10 @@ export default function RootLayout({
                 Interior Painting
               </Link>
               <Link
-                href="/roof-cleaning"
+                href="/services"
                 className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
               >
-                Roof Cleaning
-              </Link>
-              <Link
-                href="/driveway-cleaning"
-                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
-              >
-                Driveway Cleaning
-              </Link>
-              <Link
-                href="/patio-cleaning"
-                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
-              >
-                Patio Cleaning
-              </Link>
-              <Link
-                href="/gutter-cleaning"
-                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
-              >
-                Gutter Cleaning
+                Other Services
               </Link>
               <Link
                 href="/areas-we-cover"
@@ -88,12 +70,6 @@ export default function RootLayout({
                 className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
               >
                 About
-              </Link>
-              <Link
-                href="/contact"
-                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
-              >
-                Contact
               </Link>
             </nav>
 
@@ -133,23 +109,13 @@ export default function RootLayout({
                     </Link>
                   </li>
                   <li>
-                    <Link href="/roof-cleaning" className="hover:text-white">
-                      Roof Cleaning
+                    <Link href="/services" className="hover:text-white">
+                      Other Services
                     </Link>
                   </li>
                   <li>
-                    <Link href="/driveway-cleaning" className="hover:text-white">
-                      Driveway Cleaning
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/patio-cleaning" className="hover:text-white">
-                      Patio Cleaning
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/gutter-cleaning" className="hover:text-white">
-                      Gutter Cleaning
+                    <Link href="/areas-we-cover" className="hover:text-white">
+                      Areas We Cover
                     </Link>
                   </li>
                 </ul>
@@ -172,8 +138,8 @@ export default function RootLayout({
                     </a>
                   </li>
                   <li>
-                    <Link href="/areas-we-cover" className="hover:text-white">
-                      Areas We Cover
+                    <Link href="/about" className="hover:text-white">
+                      About
                     </Link>
                   </li>
                 </ul>
@@ -187,11 +153,11 @@ export default function RootLayout({
                 <Link href="/about" className="hover:text-white">
                   About
                 </Link>
-                <Link href="/contact" className="hover:text-white">
-                  Contact
-                </Link>
                 <Link href="/privacy-policy" className="hover:text-white">
                   Privacy Policy
+                </Link>
+                <Link href="/services" className="hover:text-white">
+                  Other Services
                 </Link>
               </div>
             </div>
