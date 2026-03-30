@@ -4,6 +4,11 @@ import QuoteForm from "../components/QuoteForm";
 export default function Home() {
   const services = [
     {
+      title: "Interior Painting",
+      text: "Fast, clean and affordable interior painting for homes and rental properties across Dublin and Kildare.",
+      href: "/interior-painting",
+    },
+    {
       title: "Roof Cleaning",
       text: "Professional roof cleaning to remove moss, algae and improve the appearance of your home.",
       href: "/roof-cleaning",
@@ -35,17 +40,24 @@ export default function Home() {
             </span>
 
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-              Get Fast Quotes for Roof, Gutter, Patio & Driveway Cleaning
+              Interior Painting & Property Services in Dublin & Kildare
             </h1>
 
             <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
-              LEA Solutions helps homeowners connect with trusted local contractors for exterior cleaning services across Dublin and Kildare.
+              LEA Solutions provides fast, reliable interior painting and exterior property services for homeowners across Dublin and Kildare.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/contact"
+                href="/interior-painting"
                 className="rounded-xl bg-[#0B3B8C] px-6 py-3 text-sm font-semibold text-white hover:bg-[#082d6c]"
+              >
+                View Interior Painting
+              </Link>
+
+              <Link
+                href="/contact"
+                className="rounded-xl border border-[#0B3B8C] px-6 py-3 text-sm font-semibold text-[#0B3B8C] hover:bg-[#EAF2FF]"
               >
                 Request a Quote
               </Link>
@@ -63,8 +75,8 @@ export default function Home() {
             <QuoteForm
               formName="homepage-quote"
               heading="Request a Quote"
-              description="Send your details and we’ll help arrange a fast quote for your job."
-              defaultService="Roof Cleaning"
+              description="Send your details and we’ll help arrange a fast quote for your painting or property service job."
+              defaultService="Interior Painting"
               jobDetailsPlaceholder="Tell us about the job"
             />
           </div>
@@ -77,11 +89,11 @@ export default function Home() {
             Our Services
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Exterior cleaning services for homeowners across Dublin and Kildare.
+            Interior painting and property services for homeowners across Dublin and Kildare.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
           {services.map((service) => (
             <Link
               key={service.title}
@@ -126,9 +138,9 @@ export default function Home() {
               <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#DCE8FF] font-bold text-[#0B3B8C]">
                 2
               </div>
-              <h3 className="font-semibold text-slate-900">We Connect You</h3>
+              <h3 className="font-semibold text-slate-900">We Review Your Job</h3>
               <p className="mt-2 text-sm leading-6 text-slate-600">
-                We help connect you with a suitable local contractor for the job.
+                We review the details and help arrange the right next step for your painting or property service job.
               </p>
             </div>
 
@@ -138,7 +150,7 @@ export default function Home() {
               </div>
               <h3 className="font-semibold text-slate-900">Get Your Quote</h3>
               <p className="mt-2 text-sm leading-6 text-slate-600">
-                Receive a quote and arrange the work directly.
+                Receive a quote and arrange the work quickly and easily.
               </p>
             </div>
           </div>
@@ -156,8 +168,15 @@ export default function Home() {
 
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Link
-            href="/contact"
+            href="/interior-painting"
             className="rounded-xl bg-[#0B3B8C] px-6 py-3 text-sm font-semibold text-white hover:bg-[#082d6c]"
+          >
+            View Interior Painting
+          </Link>
+
+          <Link
+            href="/contact"
+            className="rounded-xl border border-[#0B3B8C] px-6 py-3 text-sm font-semibold text-[#0B3B8C] hover:bg-[#EAF2FF]"
           >
             Request a Quote
           </Link>
