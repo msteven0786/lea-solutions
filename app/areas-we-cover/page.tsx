@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Areas We Cover | LEA Solutions",
   description:
-    "LEA Solutions connects homeowners with trusted local contractors for roof cleaning, driveway cleaning, patio cleaning and gutter cleaning across Dublin and Kildare.",
+    "LEA Solutions provide trusted local professionals for interior painting and property services across Dublin, Wicklow and Kildare",
 };
 
 export default function AreasWeCoverPage() {
