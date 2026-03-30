@@ -18,7 +18,9 @@ export default function QuoteForm({
       id="quote"
       className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm"
     >
-      <h2 className="text-2xl font-bold tracking-tight">{heading}</h2>
+      <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+        {heading}
+      </h2>
 
       <p className="mt-3 text-slate-600">{description}</p>
 
@@ -75,12 +77,12 @@ export default function QuoteForm({
           defaultValue={defaultService}
           className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-500"
         >
-          <option>Roof Cleaning</option>
-          <option>Driveway Cleaning</option>
-          <option>Patio Cleaning</option>
-          <option>Gutter Cleaning</option>
-          <option>Exterior House Cleaning</option>
-          <option>Wheelie Bin Cleaning</option>
+          <option value="Interior Painting">Interior Painting</option>
+          <option value="Roof Cleaning">Roof Cleaning</option>
+          <option value="Driveway Cleaning">Driveway Cleaning</option>
+          <option value="Patio Cleaning">Patio Cleaning</option>
+          <option value="Gutter Cleaning">Gutter Cleaning</option>
+          <option value="Exterior House Cleaning">Exterior House Cleaning</option>
         </select>
 
         <textarea
@@ -93,7 +95,7 @@ export default function QuoteForm({
 
         <button
           type="submit"
-          className="w-full rounded-xl bg-slate-900 px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-800"
+          className="w-full rounded-xl bg-[#0B3B8C] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#082d6c]"
         >
           Request My Quote
         </button>

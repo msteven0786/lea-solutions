@@ -16,18 +16,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "LEA Solutions | Exterior Cleaning & Property Services",
+    default: "LEA Solutions | Interior Painting & Property Services",
     template: "%s | LEA Solutions",
   },
   description:
-    "LEA Solutions connects homeowners with trusted local contractors for roof cleaning, driveway cleaning, patio cleaning and gutter cleaning across Dublin and Kildare.",
+    "LEA Solutions provides interior painting and property services across Dublin, Wicklow and Kildare. Get a fast quote for interior painting, roof cleaning, driveway cleaning, patio cleaning and gutter cleaning.",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
       <body
@@ -47,25 +47,52 @@ export default function RootLayout({
             </Link>
 
             <nav className="hidden items-center gap-6 md:flex">
-              <Link href="/roof-cleaning" className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]">
+              <Link
+                href="/interior-painting"
+                className="text-sm font-semibold text-[#0B3B8C] hover:text-[#082d6c]"
+              >
+                Interior Painting
+              </Link>
+              <Link
+                href="/roof-cleaning"
+                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
+              >
                 Roof Cleaning
               </Link>
-              <Link href="/driveway-cleaning" className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]">
+              <Link
+                href="/driveway-cleaning"
+                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
+              >
                 Driveway Cleaning
               </Link>
-              <Link href="/patio-cleaning" className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]">
+              <Link
+                href="/patio-cleaning"
+                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
+              >
                 Patio Cleaning
               </Link>
-              <Link href="/gutter-cleaning" className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]">
+              <Link
+                href="/gutter-cleaning"
+                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
+              >
                 Gutter Cleaning
               </Link>
-              <Link href="/areas-we-cover" className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]">
+              <Link
+                href="/areas-we-cover"
+                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
+              >
                 Areas We Cover
               </Link>
-              <Link href="/about" className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]">
+              <Link
+                href="/about"
+                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
+              >
                 About
               </Link>
-              <Link href="/contact" className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]">
+              <Link
+                href="/contact"
+                className="text-sm font-medium text-slate-700 hover:text-[#0B3B8C]"
+              >
                 Contact
               </Link>
             </nav>
@@ -93,13 +120,18 @@ export default function RootLayout({
                   className="h-auto w-[170px] brightness-0 invert"
                 />
                 <p className="mt-4 text-sm leading-6 text-blue-100">
-                  Exterior cleaning and property service quote requests across Dublin and Kildare.
+                  Interior painting and property service quote requests across Dublin, Wicklow and Kildare.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-lg font-semibold">Services</h3>
                 <ul className="mt-3 space-y-2 text-sm text-blue-100">
+                  <li>
+                    <Link href="/interior-painting" className="hover:text-white">
+                      Interior Painting
+                    </Link>
+                  </li>
                   <li>
                     <Link href="/roof-cleaning" className="hover:text-white">
                       Roof Cleaning
@@ -132,7 +164,10 @@ export default function RootLayout({
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:steven@leasolutions.ie" className="hover:text-white">
+                    <a
+                      href="mailto:steven@leasolutions.ie"
+                      className="hover:text-white"
+                    >
                       steven@leasolutions.ie
                     </a>
                   </li>

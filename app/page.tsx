@@ -32,21 +32,20 @@ export default function Home() {
 
   return (
     <main className="bg-white">
-      {/* HERO */}
       <section className="bg-gradient-to-b from-[#EAF2FF] via-white to-white">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-2 lg:items-center">
           <div>
             <span className="inline-flex rounded-full bg-[#DCE8FF] px-4 py-1 text-sm font-medium text-[#0B3B8C]">
-              Dublin & Kildare
+              Dublin, Wicklow & Kildare
             </span>
 
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-              Interior Painting Services in Dublin & Kildare
+              Interior Painting Services in Dublin, Wicklow & Kildare
             </h1>
 
             <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
               Clean, reliable and affordable interior painting for homes and rental properties.
-              Get a fast quote and have your space refreshed quickly.
+              Get a fast quote and refresh your space with a professional finish.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -85,7 +84,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BENEFITS */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {[
@@ -96,7 +94,7 @@ export default function Home() {
           ].map((item) => (
             <div
               key={item}
-              className="rounded-xl border p-6 text-center shadow-sm"
+              className="rounded-xl border border-slate-200 bg-white p-6 text-center shadow-sm"
             >
               <p className="font-semibold text-slate-900">{item}</p>
             </div>
@@ -104,12 +102,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PERFECT FOR */}
       <section className="bg-[#F8FBFF] py-16">
         <div className="mx-auto max-w-6xl px-6 text-center">
-          <h2 className="text-3xl font-bold text-slate-900">
-            Perfect For
-          </h2>
+          <h2 className="text-3xl font-bold text-slate-900">Perfect For</h2>
+          <p className="mt-4 text-lg text-slate-600">
+            Interior painting that suits everyday home improvement and property refresh jobs.
+          </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
@@ -120,7 +118,7 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item}
-                className="rounded-xl border bg-white p-6 shadow-sm"
+                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
               >
                 <p className="text-slate-700">{item}</p>
               </div>
@@ -129,14 +127,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICES */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-slate-900">
-            Our Services
+            Additional Property Services
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Interior painting and additional property services.
+            Interior painting is our main focus, with additional property services also available.
           </p>
         </div>
 
@@ -150,7 +147,9 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-slate-900">
                 {service.title}
               </h3>
-              <p className="mt-2 text-sm text-slate-600">{service.text}</p>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                {service.text}
+              </p>
               <span className="mt-4 inline-block text-sm font-semibold text-[#0B3B8C]">
                 Learn more →
               </span>
@@ -159,7 +158,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
       <section id="quote" className="mx-auto max-w-4xl px-6 py-16 text-center">
         <h2 className="text-3xl font-bold text-slate-900">
           Get Your Interior Painting Quote
