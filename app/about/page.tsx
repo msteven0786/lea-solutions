@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn more about LEA Solutions and how we help homeowners across Dublin and Kildare arrange trusted exterior cleaning services.",
+    "Learn more about LEA Solutions and how we help homeowners across Dublin, Wicklow and Kildare with interior painting and property services.",
 };
 
 export default function AboutPage() {
@@ -18,14 +18,14 @@ export default function AboutPage() {
             </span>
 
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-              Helping homeowners find trusted local exterior cleaning services
+              Interior painting and property services made simple
             </h1>
 
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              LEA Solutions helps homeowners across Dublin and Kildare connect with
-              trusted local contractors for exterior cleaning and property services.
-              Our focus is simple: make it easier to request a quote quickly and get
-              help from reliable local professionals.
+              LEA Solutions connects homeowners with trusted local professionals for
+              interior painting and property services across Dublin, Wicklow and
+              Kildare. Our goal is simple: make it easier to request a quote quickly
+              and get help from reliable local professionals.
             </p>
           </div>
         </div>
@@ -38,24 +38,31 @@ export default function AboutPage() {
             <p className="mt-4 leading-7 text-slate-600">
               We keep the process simple. You tell us what service you need, where
               you are based, and a few details about the job. From there, we help
-              arrange a quote from a suitable local contractor.
+              arrange the right next step and a fast quote from a suitable local
+              professional.
             </p>
           </div>
 
           <div className="rounded-3xl border border-slate-200 p-8 shadow-sm">
-            <h2 className="text-xl font-semibold text-slate-900">Services Covered</h2>
+            <h2 className="text-xl font-semibold text-slate-900">
+              Interior Painting First
+            </h2>
             <p className="mt-4 leading-7 text-slate-600">
-              We help with roof cleaning, gutter cleaning, patio cleaning and driveway
-              cleaning for homeowners who want a fast, straightforward way to get
-              exterior cleaning work priced.
+              Interior painting is our main focus. From refreshing a single room to
+              repainting larger spaces, we help homeowners and landlords improve
+              their properties with clean, reliable and affordable painting
+              services.
             </p>
           </div>
 
           <div className="rounded-3xl border border-slate-200 p-8 shadow-sm">
-            <h2 className="text-xl font-semibold text-slate-900">Areas Covered</h2>
+            <h2 className="text-xl font-semibold text-slate-900">
+              Additional Property Services
+            </h2>
             <p className="mt-4 leading-7 text-slate-600">
-              LEA Solutions focuses on Dublin and Kildare, helping homeowners in local
-              areas connect with trusted professionals for exterior cleaning jobs.
+              Alongside interior painting, we also help with other property services
+              including roof cleaning, gutter cleaning, patio cleaning and driveway
+              cleaning across Dublin, Wicklow and Kildare.
             </p>
           </div>
         </div>
@@ -64,11 +71,11 @@ export default function AboutPage() {
       <section className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-4xl px-6 py-16 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-            Need a quote for an exterior cleaning job?
+            Need a quote for interior painting or another property service?
           </h2>
           <p className="mt-4 text-lg leading-8 text-slate-600">
-            Visit our contact page and send over a few details. We’ll help point you
-            in the right direction.
+            Visit our contact page and send over a few details. We’ll get back to
+            you quickly and help point you in the right direction.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

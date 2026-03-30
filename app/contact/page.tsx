@@ -4,7 +4,7 @@ import QuoteForm from "../../components/QuoteForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact LEA Solutions for roof cleaning, gutter cleaning, patio cleaning and driveway cleaning quotes across Dublin and Kildare.",
+    "Contact LEA Solutions for interior painting and property service quotes across Dublin, Wicklow and Kildare.",
 };
 
 export default function ContactPage() {
@@ -22,9 +22,9 @@ export default function ContactPage() {
             </h1>
 
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              Looking for roof cleaning, driveway cleaning, patio cleaning or gutter
-              cleaning? Send us your details and we’ll help connect you with a trusted
-              local contractor.
+              Looking for interior painting or another property service? Send us
+              your details and we’ll get back to you quickly with the right next
+              step for your job.
             </p>
           </div>
         </div>
@@ -33,7 +33,9 @@ export default function ContactPage() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold text-slate-900">Contact Details</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">
+              Contact Details
+            </h2>
 
             <div className="mt-6 space-y-5 text-slate-600">
               <div>
@@ -65,7 +67,7 @@ export default function ContactPage() {
                   Areas Covered
                 </p>
                 <p className="mt-1 text-lg text-slate-900">
-                  Dublin and Kildare
+                  Dublin, Wicklow and Kildare
                 </p>
               </div>
             </div>
@@ -75,8 +77,8 @@ export default function ContactPage() {
                 Fastest way to get a quote
               </h3>
               <p className="mt-2 text-slate-600">
-                Fill in the form with a few details about your job and we’ll be in touch
-                as soon as possible.
+                Fill in the form with a few details about your painting or
+                property service job and we’ll be in touch as soon as possible.
               </p>
             </div>
           </div>
@@ -84,9 +86,9 @@ export default function ContactPage() {
           <QuoteForm
             formName="contact-page-quote"
             heading="Request a Quote"
-            description="Tell us what service you need and we’ll help arrange a fast quote."
-            defaultService="Roof Cleaning"
-            jobDetailsPlaceholder="Example: semi-detached house, moss on roof, located in Tallaght"
+            description="Tell us what service you need and we’ll get back to you quickly."
+            defaultService="Interior Painting"
+            jobDetailsPlaceholder="Example: living room and hallway to be painted, based in Naas"
           />
         </div>
       </section>
