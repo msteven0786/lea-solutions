@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Areas We Cover | LEA Solutions",
   description:
-    "LEA Solutions provide trusted local professionals for interior painting and property services across Dublin, Wicklow and Kildare",
+    "LEA Solutions provides interior painting and property services across Dublin, Wicklow and Kildare. Get a fast quote from trusted local professionals.",
 };
 
 export default function AreasWeCoverPage() {
@@ -31,6 +31,7 @@ export default function AreasWeCoverPage() {
 
   return (
     <main className="min-h-screen bg-white text-slate-900">
+      {/* HERO */}
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
@@ -38,22 +39,22 @@ export default function AreasWeCoverPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-            LEA Solutions connects homeowners with trusted local contractors
-            for roof cleaning, driveway cleaning, patio cleaning and gutter
-            cleaning across Dublin and Kildare.
+            LEA Solutions provides interior painting and property services across
+            Dublin, Wicklow and Kildare. Get a fast quote and connect with trusted
+            local professionals for your home improvement project.
           </p>
         </div>
       </section>
 
-      {/* Areas list */}
+      {/* AREAS */}
       <section className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="text-3xl font-bold tracking-tight">
           Local Areas We Serve
         </h2>
 
         <p className="mt-4 text-lg text-slate-600">
-          We focus on local areas across Dublin and nearby towns so homeowners
-          can get fast quotes and reliable exterior cleaning services.
+          We focus on local areas so homeowners can quickly get quotes for interior
+          painting and other property services.
         </p>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -64,23 +65,24 @@ export default function AreasWeCoverPage() {
             >
               <h3 className="text-lg font-semibold">{area}</h3>
               <p className="mt-2 text-sm text-slate-600">
-                Exterior cleaning services available in {area}.
+                Interior painting and property services available in {area}.
               </p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Roof cleaning location pages */}
+      {/* OTHER SERVICES (keeps SEO value but reframed) */}
       <section className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <h2 className="text-3xl font-bold tracking-tight">
-            Roof Cleaning Location Pages
+            Additional Property Services by Area
           </h2>
 
           <p className="mt-4 text-lg text-slate-600">
-            Explore our roof cleaning pages for specific towns and areas across
-            Dublin and Kildare.
+            In addition to interior painting, we also provide access to other
+            property services such as roof cleaning across Dublin, Wicklow and
+            Kildare.
           </p>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -95,7 +97,7 @@ export default function AreasWeCoverPage() {
                 </h3>
 
                 <p className="mt-2 text-sm text-slate-600">
-                  Local roof cleaning quotes available in {area.name}.
+                  Roof cleaning services available in {area.name}.
                 </p>
               </a>
             ))}
