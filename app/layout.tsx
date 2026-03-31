@@ -88,13 +88,13 @@ export default function RootLayout({
           <div className="mx-auto max-w-6xl px-6 py-10">
             <div className="grid gap-8 md:grid-cols-3">
               <div>
-                <Image
-                  src="/lea-solutions-logo-header.png"
-                  alt="LEA Solutions"
-                  width={220}
-                  height={56}
-                  className="h-auto w-[170px] brightness-0 invert"
-                />
+            <Image
+  src="/lea-solutions-logo-header.png"
+  alt="LEA Solutions"
+  width={220}
+  height={56}
+  className="h-auto w-[170px]"
+/>
                 <p className="mt-4 text-sm leading-6 text-blue-100">
                   Interior painting and property service quote requests across Dublin, Wicklow and Kildare.
                 </p>
