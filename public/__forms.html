@@ -2,28 +2,27 @@
 <html>
   <body>
     <form
-      name="quote-request"
+      name="automation-review"
       method="POST"
-      action="/thank-you.html"
+      action="/thank-you"
       data-netlify="true"
       netlify
-      data-netlify-honeypot="bot-field"
     >
-      <input type="hidden" name="form-name" value="quote-request" />
+      <input type="hidden" name="form-name" value="automation-review" />
 
-      <p hidden>
-        <label>
-          Don’t fill this out if you're human:
-          <input name="bot-field" />
-        </label>
-      </p>
-
-      <input type="text" name="fullName" />
-      <input type="text" name="phoneNumber" />
-      <input type="email" name="emailAddress" />
-      <input type="text" name="areaAddress" />
-      <input type="text" name="service" />
-      <textarea name="jobDetails"></textarea>
+      <input type="text" name="name" />
+      <input type="text" name="business" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="problem"></textarea>
+      <select name="time">
+        <option value="">Select an option</option>
+        <option value="less-than-1-hour">Less than 1 hour per week</option>
+        <option value="1-3-hours">1–3 hours per week</option>
+        <option value="3-5-hours">3–5 hours per week</option>
+        <option value="5-plus-hours">5+ hours per week</option>
+        <option value="not-sure">Not sure</option>
+      </select>
     </form>
   </body>
 </html>
